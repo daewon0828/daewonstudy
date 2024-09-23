@@ -1,35 +1,15 @@
-####웹
-웹이란 여러 컴퓨터가 서로 연결되어 정보 공유 공간
-클라이언트(데이터 생성 조희 수정 삭제)-서버(동작 수행 응답 전송)
-####프로토콜과 HTTP
-컴퓨터는 정해진 동작만 수행할 수 있는 기계
-컴퓨터가 서로 정보 공유시 규칙(프로토콜) 필요
-웹의 프로토콜==HTTP
-HTTP Method-데이터를 다루는 방법
-URL-다룰 데이터의 위치
-GET(조회) POST(생성) PUT(수정) PATCH(수정) DELETE(삭제)
-http:/(프로토콜)  www.xxxxxx(서버주소)/ user/1/nickname(서버 내 데이터 위치)
-데이터 - 헤더/바디
-헤더(통신에 대한 정보) 바디(주고 받으려는 데이터)
-요청에 대한 처리 결과는 HTTP가 정의하는 상태 코드
-상태코드는 응답 데이터의 헤더에 들어감
-200(처리성공) 201(생성 성공) 400(클라이언트 요청 오류) 404(데이터 업슴) 500(에러)
+#Python 웹 프레임워크인 Django를 통해 8주간 백엔드 웹개발에 대한 기초 지식을 배울 예정
+#Django는 2005년부터 시작된 Python의 오픈 소스 웹 프레임워크이자 풀 스택 프레임워크
+#장고를 이용해 웹 게시판,백엔드 지식 습득 예정
+#인터넷은 컴퓨터로 연결하여 TCP/IP라는 통신 프로토콜을 이용해 정보를 주고 받는 글로벌 컴퓨터 네트워크 시스템
+#기기 간 통신은 교환되는 데이터의 형식에 대해 상호 합의를 요구하는데, 이런 형식을 정의하는 규칙의 집합을 프로토콜
+#웹(World Wide Web,WWW) 거미줄이라는Web,URL로 위치 지정, 프로토콜로 데이터 전송하는 정보 시스템
+http:(프로토콜)//www.example(도메인):80(포트)/path/to/myfile?xsxx
+#http-hypertext transfer protocol
+client request(url)- server response
+#구조(start-line/header/empty-line/message-body)
+#웹서버-application-db(조회,저장,수정,삭제)
+프론트엔드(요청)-백엔드(보냄)
+#python 버전 확인 방법
+1.window+R 2.python-v 3.python 옆에 있는 버전 확인
 
-####프론트엔드와 백엔드
-프론트는 화면에 채울 데이터를 백엔드에 요청ㅇ
-백엔드는 프론트에 응답
-데이터는 JSON 형태
-(프론트와 백엔드 역시 각각 웹에서 동작하는 컴퓨터 어플)
-API(어플과 소통하는 구체적인 방법 정의)-사용설명서
-어떤 http method url을 사용해야 하는지 정의한 것
-각요청에 대해 어떤 응답 보내는지 정의
-REST API
-URL-조작할 데이터 HTTP method-데이터에 대한 행위
-###프로젝트
-프로젝트 진행 과정
-1. API 설계
-2. DB, ERD 설계
-3. API 서버 프로그램 작성
-4. 테스트
-5. 배포
-• API 명세를 작성할 때는 request body, request header, response body, status code 등도 함께 정의해야 한다.
